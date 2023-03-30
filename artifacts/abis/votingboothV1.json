@@ -1,0 +1,258 @@
+[
+    {
+        "members": [
+            {
+                "name": "low",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "high",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Uint256",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "data": [
+            {
+                "name": "role",
+                "type": "felt"
+            },
+            {
+                "name": "account",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "RoleGranted",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "role",
+                "type": "felt"
+            },
+            {
+                "name": "account",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "RoleRevoked",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "implementation",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "Upgraded",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "previousAdmin",
+                "type": "felt"
+            },
+            {
+                "name": "newAdmin",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "AdminChanged",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "time_stamp",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "PillVoteTimeStamp",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "pillId",
+                "type": "Uint256"
+            },
+            {
+                "name": "traitId",
+                "type": "Uint256"
+            },
+            {
+                "name": "time_stamp",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "TraitVoteTimeStamp",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "name": "admin",
+                "type": "felt"
+            },
+            {
+                "name": "starkpill_addr",
+                "type": "felt"
+            }
+        ],
+        "name": "initializer",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "felt"
+            }
+        ],
+        "name": "getOwnerVotes",
+        "outputs": [
+            {
+                "name": "ammount",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "pillId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "getPillVotingPower",
+        "outputs": [
+            {
+                "name": "ammount",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "pillId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "getPillVoteTimer",
+        "outputs": [
+            {
+                "name": "time",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getPillContract",
+        "outputs": [
+            {
+                "name": "address",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "implementation",
+        "outputs": [
+            {
+                "name": "implementation",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "felt"
+            },
+            {
+                "name": "ammount",
+                "type": "felt"
+            }
+        ],
+        "name": "execute_votes",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "address",
+                "type": "felt"
+            }
+        ],
+        "name": "setPillContract",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "admin",
+                "type": "felt"
+            }
+        ],
+        "name": "grantAdminRole",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "admin",
+                "type": "felt"
+            }
+        ],
+        "name": "revokeAdminRole",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "implementation",
+                "type": "felt"
+            }
+        ],
+        "name": "upgrade",
+        "outputs": [],
+        "type": "function"
+    }
+]

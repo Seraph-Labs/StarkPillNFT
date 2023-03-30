@@ -1,0 +1,1180 @@
+[
+    {
+        "members": [
+            {
+                "name": "low",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "high",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Uint256",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "members": [
+            {
+                "name": "val",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "len",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "StrObj",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "members": [
+            {
+                "name": "ing",
+                "offset": 0,
+                "type": "Uint256"
+            },
+            {
+                "name": "BG",
+                "offset": 2,
+                "type": "Uint256"
+            }
+        ],
+        "name": "PillBottle",
+        "size": 4,
+        "type": "struct"
+    },
+    {
+        "data": [
+            {
+                "name": "role",
+                "type": "felt"
+            },
+            {
+                "name": "account",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "RoleGranted",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "role",
+                "type": "felt"
+            },
+            {
+                "name": "account",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "RoleRevoked",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "account",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "Paused",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "account",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "Unpaused",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "implementation",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "Upgraded",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "previousAdmin",
+                "type": "felt"
+            },
+            {
+                "name": "newAdmin",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "AdminChanged",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "from_",
+                "type": "felt"
+            },
+            {
+                "name": "to",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "Transfer",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "owner",
+                "type": "felt"
+            },
+            {
+                "name": "approved",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "Approval",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "owner",
+                "type": "felt"
+            },
+            {
+                "name": "operator",
+                "type": "felt"
+            },
+            {
+                "name": "approved",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "ApprovalForAll",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "from_",
+                "type": "felt"
+            },
+            {
+                "name": "to",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "targetTokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "transferUnits",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "TransferUnits",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "owner",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "newTokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "splitUnits",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "Split",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "owner",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "targetTokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "mergeUnits",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "Merge",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "owner",
+                "type": "felt"
+            },
+            {
+                "name": "approved",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "approvalUnits",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "ApprovalUnits",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "from_",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "to",
+                "type": "Uint256"
+            },
+            {
+                "name": "toContract",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "ScalarTransfer",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "from_",
+                "type": "Uint256"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "to",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "ScalarRemove",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "attrId",
+                "type": "Uint256"
+            },
+            {
+                "name": "name",
+                "type": "StrObj"
+            }
+        ],
+        "keys": [],
+        "name": "AttributeCreated",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "attrId",
+                "type": "Uint256"
+            },
+            {
+                "name": "value",
+                "type": "StrObj"
+            },
+            {
+                "name": "ammount",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "AttributeAdded",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "typeIndex",
+                "type": "felt"
+            },
+            {
+                "name": "index",
+                "type": "felt"
+            },
+            {
+                "name": "startAmmount",
+                "type": "felt"
+            },
+            {
+                "name": "ammount_left",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "PharmacyStockUpdate",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "owner",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "medicalBill",
+                "type": "Uint256"
+            },
+            {
+                "name": "old_prescription",
+                "type": "PillBottle"
+            },
+            {
+                "name": "new_prescription",
+                "type": "PillBottle"
+            }
+        ],
+        "keys": [],
+        "name": "PrescriptionUpdated",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "minter",
+                "type": "felt"
+            },
+            {
+                "name": "pill",
+                "type": "Uint256"
+            },
+            {
+                "name": "price",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "PremiumStarkPillMinted",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "old_currency",
+                "type": "felt"
+            },
+            {
+                "name": "new_currency",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "CurrenyUpdated",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "voter",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "fame",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "PillFameUpdated",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "voter",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "defame",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "PillDeFameUpdated",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "name": "admin",
+                "type": "felt"
+            }
+        ],
+        "name": "initializer",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "interfaceId",
+                "type": "felt"
+            }
+        ],
+        "name": "supportsInterface",
+        "outputs": [
+            {
+                "name": "success",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "name",
+        "outputs": [
+            {
+                "name": "name",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "symbol",
+        "outputs": [
+            {
+                "name": "symbol",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "totalSupply",
+        "outputs": [
+            {
+                "name": "supply",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "felt"
+            }
+        ],
+        "name": "balanceOf",
+        "outputs": [
+            {
+                "name": "balance",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "ownerOf",
+        "outputs": [
+            {
+                "name": "owner",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "felt"
+            },
+            {
+                "name": "index",
+                "type": "Uint256"
+            }
+        ],
+        "name": "tokenOfOwnerByIndex",
+        "outputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "index",
+                "type": "Uint256"
+            }
+        ],
+        "name": "tokenByIndex",
+        "outputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "getApproved",
+        "outputs": [
+            {
+                "name": "approved",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "owner",
+                "type": "felt"
+            },
+            {
+                "name": "operator",
+                "type": "felt"
+            }
+        ],
+        "name": "isApprovedForAll",
+        "outputs": [
+            {
+                "name": "is_approved",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "tokenURI",
+        "outputs": [
+            {
+                "name": "tokenURI_len",
+                "type": "felt"
+            },
+            {
+                "name": "tokenURI",
+                "type": "felt*"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "slotOf",
+        "outputs": [
+            {
+                "name": "slot",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "slot",
+                "type": "Uint256"
+            }
+        ],
+        "name": "supplyOfSlot",
+        "outputs": [
+            {
+                "name": "supply",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "tokenOf",
+        "outputs": [
+            {
+                "name": "fromTokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "fromContract",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "tokenBalanceOf",
+        "outputs": [
+            {
+                "name": "balance",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "index",
+                "type": "Uint256"
+            }
+        ],
+        "name": "tokenOfTokenByIndex",
+        "outputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "from_",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "attrId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "attributeAmmount",
+        "outputs": [
+            {
+                "name": "ammount",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "getPrescription",
+        "outputs": [
+            {
+                "name": "ingredient",
+                "type": "Uint256"
+            },
+            {
+                "name": "Background",
+                "type": "Uint256"
+            },
+            {
+                "name": "price",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "getPillFameLevels",
+        "outputs": [
+            {
+                "name": "fame",
+                "type": "felt"
+            },
+            {
+                "name": "defame",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "ingredientType",
+                "type": "felt"
+            }
+        ],
+        "name": "getIngredientPremium",
+        "outputs": [
+            {
+                "name": "premium",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "backgroundType",
+                "type": "felt"
+            }
+        ],
+        "name": "getBackgroundPremium",
+        "outputs": [
+            {
+                "name": "premium",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "typeIndex",
+                "type": "felt"
+            },
+            {
+                "name": "index",
+                "type": "felt"
+            }
+        ],
+        "name": "getStock",
+        "outputs": [
+            {
+                "name": "start_ammount",
+                "type": "felt"
+            },
+            {
+                "name": "ammount_left",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getVotingBoothContract",
+        "outputs": [
+            {
+                "name": "address",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "implementation",
+        "outputs": [
+            {
+                "name": "implementation",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "operator",
+                "type": "felt"
+            },
+            {
+                "name": "approved",
+                "type": "felt"
+            }
+        ],
+        "name": "setApprovalForAll",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "to",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "approve",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "from_",
+                "type": "felt"
+            },
+            {
+                "name": "to",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "transferFrom",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "tokenURI_len",
+                "type": "felt"
+            },
+            {
+                "name": "tokenURI",
+                "type": "felt*"
+            }
+        ],
+        "name": "setTokenURI",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "from_",
+                "type": "felt"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "to",
+                "type": "Uint256"
+            }
+        ],
+        "name": "scalarTransferFrom",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "from_",
+                "type": "Uint256"
+            },
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            }
+        ],
+        "name": "scalarRemoveFrom",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "ingredientType",
+                "type": "felt"
+            },
+            {
+                "name": "backgroundType",
+                "type": "felt"
+            },
+            {
+                "name": "price",
+                "type": "Uint256"
+            }
+        ],
+        "name": "mint",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "ammount",
+                "type": "felt"
+            }
+        ],
+        "name": "famePill",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "tokenId",
+                "type": "Uint256"
+            },
+            {
+                "name": "ammount",
+                "type": "felt"
+            }
+        ],
+        "name": "deFamePill",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "index",
+                "type": "felt"
+            },
+            {
+                "name": "price",
+                "type": "Uint256"
+            }
+        ],
+        "name": "setIngredientPremium",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "index",
+                "type": "felt"
+            },
+            {
+                "name": "price",
+                "type": "Uint256"
+            }
+        ],
+        "name": "setBackgroundPremium",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "typeIndex",
+                "type": "felt"
+            },
+            {
+                "name": "index",
+                "type": "felt"
+            },
+            {
+                "name": "ammount",
+                "type": "felt"
+            }
+        ],
+        "name": "updateStock",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "address",
+                "type": "felt"
+            }
+        ],
+        "name": "setVotingBoothContract",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "pause",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "unpause",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "admin",
+                "type": "felt"
+            }
+        ],
+        "name": "grantAdminRole",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "admin",
+                "type": "felt"
+            }
+        ],
+        "name": "revokeAdminRole",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "implementation",
+                "type": "felt"
+            }
+        ],
+        "name": "upgrade",
+        "outputs": [],
+        "type": "function"
+    }
+]

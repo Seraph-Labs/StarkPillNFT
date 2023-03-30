@@ -1,0 +1,32 @@
+[
+    {
+        "data": [
+            {
+                "name": "role",
+                "type": "felt"
+            },
+            {
+                "name": "account",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "RoleGranted",
+        "type": "event"
+    },
+    {
+        "data": [
+            {
+                "name": "role",
+                "type": "felt"
+            },
+            {
+                "name": "account",
+                "type": "felt"
+            }
+        ],
+        "keys": [],
+        "name": "RoleRevoked",
+        "type": "event"
+    }
+]
